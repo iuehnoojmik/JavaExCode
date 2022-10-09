@@ -1,6 +1,6 @@
 package jv2;
 
-//InstanceOf ¿¹Á¦
+//InstanceOf ì˜ˆì œ
 class Person{}
 class Student extends Person{} //Person-Student
 class Researcher extends Person{}
@@ -22,13 +22,13 @@ public class InstanceOfEX {
 
 	public static void main(String[] args) {
 		System.out.print("new Student()->\t");
-		print(new Student()); //Student °´Ã¼´Â Person Å¸ÀÔÀÌ±âµµ ÇØ¼­ Person°ú Student Ãâ·Â
-		//Person p=new Student ÄÄÆÄÀÏ·¯°¡ ÀÚµ¿ »ı¼º
+		print(new Student()); //Student ê°ì²´ëŠ” Person íƒ€ì…ì´ê¸°ë„ í•´ì„œ Personê³¼ Student ì¶œë ¥
+		//Person p=new Student ì»´íŒŒì¼ëŸ¬ê°€ ìë™ ìƒì„±
 		System.out.print("new Researcher()->\t");
-		print(new Researcher()); //Researcher °´Ã¼´Â Person Å¸ÀÔÀÌ±âµµ ÇØ¼­ Person°ú Researcher Ãâ·Â
-		//Person p=new Researcher ÄÄÆÄÀÏ·¯°¡ ÀÚµ¿ »ı¼º
+		print(new Researcher()); //Researcher ê°ì²´ëŠ” Person íƒ€ì…ì´ê¸°ë„ í•´ì„œ Personê³¼ Researcher ì¶œë ¥
+		//Person p=new Researcher ì»´íŒŒì¼ëŸ¬ê°€ ìë™ ìƒì„±
 		System.out.print("new Professor()->\t");
-		print(new Professor()); //Professor °´Ã¼´Â ResearcherÅ¸ÀÔÀÌ¸é¼­ PersonÅ¸ÀÔÀÌ¹Ç·Î Person°ú Researhcer Professor Ãâ·Â
-		//Person p=new Professor ÄÄÆÄÀÏ·¯°¡ ÀÚµ¿ »ı¼º	
+		print(new Professor()); //Professor ê°ì²´ëŠ” Researcheríƒ€ì…ì´ë©´ì„œ Personíƒ€ì…ì´ë¯€ë¡œ Personê³¼ Researhcer Professor ì¶œë ¥
+		//Person p=new Professor ì»´íŒŒì¼ëŸ¬ê°€ ìë™ ìƒì„±	
 	}
 }
