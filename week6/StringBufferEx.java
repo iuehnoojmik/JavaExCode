@@ -2,19 +2,19 @@ public class StringBufferEx {
 	public static void main(String[] args) {
 		StringBuffer sb = new StringBuffer("This");
 		
-		sb.append(" is pencil"); // ¹®ÀÚ¿­ µ¡ºÙÀÌ±â
+		sb.append(" is pencil"); // ë¬¸ìì—´ ë§ë¶™ì´ê¸°
 		System.out.println(sb);
 		
-		sb.insert(7, " my"); // "my" ¹®ÀÚ¿­ »ğÀÔ
+		sb.insert(7, " my"); // "my" ë¬¸ìì—´ ì‚½ì…
 		System.out.println(sb);
 		
-		sb.replace(8, 10, "your"); // "my"¸¦ "your"·Î º¯°æ
+		sb.replace(8, 10, "your"); // "my"ë¥¼ "your"ë¡œ ë³€ê²½
 		System.out.println(sb);
 		
-		sb.delete(8, 13); // "your " »èÁ¦
+		sb.delete(8, 13); // "your " ì‚­ì œ
 		System.out.println(sb);
 		
-		sb.setLength(4); // ½ºÆ®¸µ ¹öÆÛ ³» ¹®ÀÚ¿­ ±æÀÌ ¼öÁ¤
+		sb.setLength(4); // ìŠ¤íŠ¸ë§ ë²„í¼ ë‚´ ë¬¸ìì—´ ê¸¸ì´ ìˆ˜ì •
 		System.out.println(sb);
 		}
 }
