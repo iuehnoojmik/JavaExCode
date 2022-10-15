@@ -10,10 +10,10 @@ class Point {
 
 public class ObjectPropertyEx {
 	public static void print(Object obj) {
-		System.out.println(obj.getClass().getName()); // Å¬·¡½º ÀÌ¸§
-		System.out.println(obj.hashCode()); // ÇØ½Ã ÄÚµå °ª
-		System.out.println(obj.toString()); // °´Ã¼¸¦ ¹®ÀÚ¿­·Î ¸¸µé¾î Ãâ·Â
-		System.out.println(obj); // °´Ã¼ Ãâ·Â
+		System.out.println(obj.getClass().getName()); // í´ë˜ìŠ¤ ì´ë¦„
+		System.out.println(obj.hashCode()); // í•´ì‹œ ì½”ë“œ ê°’
+		System.out.println(obj.toString()); // ê°ì²´ë¥¼ ë¬¸ìì—´ë¡œ ë§Œë“¤ì–´ ì¶œë ¥
+		System.out.println(obj); // ê°ì²´ ì¶œë ¥
 	}
 	
 	public static void main(String [] args) {
