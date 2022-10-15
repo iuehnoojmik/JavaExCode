@@ -13,7 +13,7 @@ public class ToStringEX {
 	public static void main(String [] args) {
 		Point p = new Point(2,3);
 		System.out.println(p.toString());
-		System.out.println(p); // p´Â p.toString()À¸·Î ÀÚµ¿ º¯È¯
-		System.out.println(p + "ÀÔ´Ï´Ù."); // p.toString() + "ÀÔ´Ï´Ù"·Î ÀÚµ¿ º¯È¯
+		System.out.println(p); // pëŠ” p.toString()ìœ¼ë¡œ ìë™ ë³€í™˜
+		System.out.println(p + "ì…ë‹ˆë‹¤."); // p.toString() + "ì…ë‹ˆë‹¤"ë¡œ ìë™ ë³€í™˜
 		}
 }
