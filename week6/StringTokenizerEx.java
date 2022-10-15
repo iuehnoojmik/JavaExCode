@@ -2,7 +2,7 @@ import java.util.StringTokenizer;
 
 public class StringTokenizerEx {
 	public static void main(String[] args) {
-		StringTokenizer st = new StringTokenizer("È«±æµ¿/ÀåÈ­/È«·Ã/ÄáÁã/ÆÏÁã", "/");
+		StringTokenizer st = new StringTokenizer("å…¨è¾¨æ‚¼/å˜æ‹³/å…¨è®¿/å°¼é›¶/è‘¡é›¶", "/");
 		while (st.hasMoreTokens()) 
 			System.out.println(st.nextToken());
 	}
