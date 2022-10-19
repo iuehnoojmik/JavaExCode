@@ -1,26 +1,26 @@
 package jv7;
 
 public class GenericMethodExample {
-	// T°¡ Å¸ÀÔ ¸Å°³ º¯¼öÀÎ Á¦³×¸¯ ¸Ş¼Òµå
+	// Tê°€ íƒ€ì… ë§¤ê°œ ë³€ìˆ˜ì¸ ì œë„¤ë¦­ ë©”ì†Œë“œ
 	public static <T> GStack<T> reverse(GStack<T> a) {
 		GStack<T> s = new GStack<T>();
 		while (true) {
 			T tmp;
-			tmp = a.pop(); // ¿ø·¡ ½ºÅÃ¿¡¼­ ¿ä¼Ò ÇÏ³ª¸¦ ²¨³¿
-			if (tmp==null) // ½ºÅÃÀÌ ºñ¾úÀ½
+			tmp = a.pop(); // ì›ë˜ ìŠ¤íƒì—ì„œ ìš”ì†Œ í•˜ë‚˜ë¥¼ êº¼ëƒ„
+			if (tmp==null) // ìŠ¤íƒì´ ë¹„ì—ˆìŒ
 				break;
 			else
-				s.push(tmp); // »õ ½ºÅÃ¿¡ ¿ä¼Ò¸¦ »ğÀÔ
+				s.push(tmp); // ìƒˆ ìŠ¤íƒì— ìš”ì†Œë¥¼ ì‚½ì…
 		}
-		return s; // »õ ½ºÅÃÀ» ¹İÈ¯
+		return s; // ìƒˆ ìŠ¤íƒì„ ë°˜í™˜
 	}
 	
 	public static void main(String[] args) {
-		// Double Å¸ÀÔÀÇ GStack »ı¼º
+		// Double íƒ€ì…ì˜ GStack ìƒì„±
 		GStack<Double> gs =
 				new GStack<Double>();
 		
-		// 5°³ÀÇ ¿ä¼Ò¸¦ ½ºÅÃ¿¡ push
+		// 5ê°œì˜ ìš”ì†Œë¥¼ ìŠ¤íƒì— push
 		for (int i=0; i<5; i++) {
 			gs.push(new Double(i));
 		}
