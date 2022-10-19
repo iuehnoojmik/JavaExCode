@@ -3,31 +3,31 @@ import java.util.*;
 
 public class ArraylistEx {
 	public static void main(String[] args) {
-		// ¹®ÀÚ¿­¸¸ »ğÀÔ°¡´ÉÇÑ ArrayList ÄÃ·º¼Ç »ı¼º
+		// ë¬¸ìì—´ë§Œ ì‚½ì…ê°€ëŠ¥í•œ ArrayList ì»¬ë ‰ì…˜ ìƒì„±
 		ArrayList<String> a = new ArrayList<String>();
 		
-		// Å°º¸µå·ÎºÎÅÍ 4°³ÀÇ ÀÌ¸§ ÀÔ·Â¹Ş¾Æ ArrayList¿¡ »ğÀÔ
+		// í‚¤ë³´ë“œë¡œë¶€í„° 4ê°œì˜ ì´ë¦„ ì…ë ¥ë°›ì•„ ArrayListì— ì‚½ì…
 		Scanner scanner = new Scanner(System.in);
 		for(int i=0; i<4; i++) {
-			System.out.print("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä>>");
-			String s = scanner.next(); // Å°º¸µå·ÎºÎÅÍ ÀÌ¸§ ÀÔ·Â
-			a.add(s); // ArrayList ÄÃ·º¼Ç¿¡ »ğÀÔ
+			System.out.print("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”>>");
+			String s = scanner.next(); // í‚¤ë³´ë“œë¡œë¶€í„° ì´ë¦„ ì…ë ¥
+			a.add(s); // ArrayList ì»¬ë ‰ì…˜ì— ì‚½ì…
 		}
 		
-		// ArrayList¿¡ µé¾î ÀÖ´Â ¸ğµç ÀÌ¸§ Ãâ·Â
+		// ArrayListì— ë“¤ì–´ ìˆëŠ” ëª¨ë“  ì´ë¦„ ì¶œë ¥
 		for(int i=0; i<a.size(); i++) {
-		// ArrayListÀÇ i ¹øÂ° ¹®ÀÚ¿­ ¾ò¾î¿À±â
+		// ArrayListì˜ i ë²ˆì§¸ ë¬¸ìì—´ ì–»ì–´ì˜¤ê¸°
 		String name = a.get(i);
 		System.out.print(name + " ");
 		}
 		
-		// °¡Àå ±ä ÀÌ¸§ Ãâ·Â
+		// ê°€ì¥ ê¸´ ì´ë¦„ ì¶œë ¥
 		int longestIndex = 0;
 		for(int i=1; i<a.size(); i++) {
 			if(a.get(longestIndex).length() < a.get(i).length())
 		longestIndex = i;
 		}
-		System.out.println("\n°¡Àå ±ä ÀÌ¸§Àº : " +
+		System.out.println("\nê°€ì¥ ê¸´ ì´ë¦„ì€ : " +
 		a.get(longestIndex));
 		scanner.close();
 		}
